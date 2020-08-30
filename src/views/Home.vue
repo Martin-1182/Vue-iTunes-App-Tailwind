@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <nav-bar />
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
@@ -7,12 +8,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue";
+import NavBar from "@/components/NavBar.vue"; // @ is an alias to /src
 
 export default defineComponent({
   name: "Home",
   components: {
-    HelloWorld
+    HelloWorld,
+    NavBar
   }
 });
 </script>
